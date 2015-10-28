@@ -1,0 +1,132 @@
+body
+{
+    font-size: 100px;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.header
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 15%;
+    font-size: 20%;
+}
+.header
+.title 
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    font-size: 200%;
+    width: 30%;
+    font-family: 'Stalinist One', cursive;
+}
+.header
+.table-title
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    width: 5%;
+    border: 2px dashed black;
+}
+.header
+.table-title
+.main-table-title
+{
+    font-weight: bold;
+    font-size: 100%;
+    white-space: nowrap;
+}
+.header
+.table-title
+.joke
+{
+    font-size: 70%;
+    text-align: justify;
+}
+.header
+.table-title
+.time
+{
+    font-size: 60%;
+    font-family: cursive;
+}
+.header 
+.table-title
+.weather-desc
+{
+    font-size: 70%;
+    font-style: cursive;
+    text-align: center;
+}
+hr
+{
+    margin: 5px 0 5px 0;
+}
+.after-header
+{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15%;
+}
+.after-header
+.after-header-center
+{
+    width: 30%;
+    text-align: center;
+}
+.after-header
+.after-header-left
+{
+    width: 5%;
+    text-align: left;
+}
+.after-header
+.after-header-right
+{
+    width: 5%;
+    text-align: right;
+}
+.main-content
+{
+    font-size: 15%;
+    -webkit-column-count: 4;
+    -webkit-column-rule: 2px solid black;
+    -webkit-column-gap: 10px;
+}
+.main-content
+.title-content
+{
+    text-align: center;
+}
+.main-content
+.title-content::first-letter
+{
+    color: red;
+    font-style: italic;
+}
+.quote
+{
+    color: #B51E38;
+    font-style: italic;
+}
+.photo-block{
+    text-align: center;
+}
+.photo-block
+.photo
+{
+    width: 190px;
+    border-radius: 30%;
+}
+.photo-block
+.legend
+{
+    display: block;
+    color: orange;
+    text-align: center;
+}
