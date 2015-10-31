@@ -1,15 +1,23 @@
 body
 {
-    font-size: 100px;
     padding: 20px;
     width: 80%;
     margin: auto;
-    font-family: 'Ubuntu', sans-serif;
+}
+input
+{
+    margin: 5px;
+}
+.page
+{
+    font-size: 100px;
+    font-family: 'Jura', sans-serif;
+    background-color: rgba(202, 164, 91, 0.59);
+    color: black;
 }
 .header
 {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 95%;
     height: 15%;
     font-size: 20%;
@@ -20,9 +28,15 @@ body
     padding-left: 5px;
     padding-right: 5px;
     text-align: center;
-    font-size: 200%;
+    font-size: 300%;
+    font-family: 'Pacifico', cursive;
     width: 30%;
-    font-family: 'Stalinist One', cursive;
+}
+.header
+.title
+.h1-paper
+{
+    margin: 0;
 }
 .header
 .table-title
@@ -65,7 +79,7 @@ body
 }
 hr
 {
-    margin: 5px 0 5px 0;
+    margin: 5px 0;
 }
 .after-header
 {
@@ -94,9 +108,15 @@ hr
 .main-content
 {
     font-size: 15%;
-    -webkit-column-count: 4;
+    column-count: 4;
+    column-rule: 2px solid black;
+    column-gap: 10px;
+    -webkit-column-count: 4; /* Safari и Chrome */
     -webkit-column-rule: 2px solid black;
     -webkit-column-gap: 10px;
+    -moz-column-count: 4; /* Для Firefox */
+    -moz-column-rule: 2px solid black;
+    -moz-column-gap: 10px;
 }
 .main-content
 .title-content
@@ -127,6 +147,45 @@ hr
 .legend
 {
     display: block;
-    color: orange;
+    color: #FF06DC;
     text-align: center;
+}
+.article-div
+{
+    width: 30%;
+    margin: 0 auto 10px;
+}
+#standart:checked ~ .page
+{
+    font-size: 100px;
+}
+#big:checked ~ .page
+{
+    font-size: 130px;
+}
+#small:checked ~ .page
+{
+    font-size: 70px;
+}
+#font-bad:checked ~ .page
+{
+    font-family: 'Bad Script', cursive;
+}
+#font-standart:checked ~ .page
+{
+    font-family: 'Jura', sans-serif;
+}
+#color-old:checked ~ .page
+{
+    background-color: rgba(202, 164, 91, 0.59);
+}
+#colors-standart:checked ~ .page
+{
+    background-color: white;
+    color: black;
+}
+#colors-invert:checked ~ .page
+{
+    background-color: black;
+    color: white;
 }
