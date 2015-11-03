@@ -13,20 +13,30 @@ input
     font-size: 100px;
     font-family: 'Jura', sans-serif;
     background-color: rgba(202, 164, 91, 0.59);
-    color: black;
+    color: #000;
+}
+.boxes
+{
+    display: table; 
+    width: 100%
+}
+.boxes
+.box
+{
+    display: table-cell;
+    padding: 5px;
 }
 .header
 {
     margin: auto;
     width: 95%;
-    height: 15%;
     font-size: 20%;
 }
 .header
 .title 
 {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 0 5px;
+    vertical-align: middle;
     text-align: center;
     font-size: 300%;
     font-family: 'Pacifico', cursive;
@@ -41,9 +51,9 @@ input
 .header
 .table-title
 {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 0 5px;
     text-align: center;
+    vertical-align: middle;
     width: 5%;
     border: 2px dashed black;
 }
@@ -108,15 +118,15 @@ hr
 .main-content
 {
     font-size: 15%;
-    column-count: 4;
-    column-rule: 2px solid black;
-    column-gap: 10px;
     -webkit-column-count: 4; /* Safari и Chrome */
     -webkit-column-rule: 2px solid black;
     -webkit-column-gap: 10px;
     -moz-column-count: 4; /* Для Firefox */
     -moz-column-rule: 2px solid black;
     -moz-column-gap: 10px;
+    column-count: 4;
+    column-rule: 2px solid black;
+    column-gap: 10px;
 }
 .main-content
 .title-content
